@@ -34,8 +34,8 @@ behind (~67.8–67.9%). Multi-token dictionary span features improved generaliza
 test set. Full ablations, hyperparameter sweeps and per-class breakdowns for every task and
 approach are in the reports.
 
-- `report_task1.pdf` — NER (baseline → ML → NN → LLM)
-- `report_task2.pdf` — DDI (baseline → ML → NN → LLM)
+- `report/report_task1.pdf` — NER (baseline → ML → NN → LLM)
+- `report/report_task2.pdf` — DDI (baseline → ML → NN → LLM)
 
 ## Repository layout
 
@@ -43,8 +43,8 @@ approach are in the reports.
 code/        source for each task/approach (bin/ = Python, *.sh = run scripts)
 data/        DDI corpus: train/devel/test XML + gold-standard outputs
 util/        shared evaluator and data-conversion helpers
-report/      LaTeX sources, plot generators, and figures for the reports
-report_task1.pdf, report_task2.pdf
+report/      final reports (PDF)
+figures/     figures used in the reports + the plot-generation scripts
 ```
 
 ## Running
