@@ -1,0 +1,26 @@
+{
+    "sysprompt" : ["Task: Biomedical drug-name recognition.",
+                   "Input: one sentence.",
+                   "Output: the same sentence with drug spans wrapped in XML tags.",
+                   "",
+                   "Tag set (use EXACTLY these four tags):",
+                   "  <drug>    = generic human-approved medicine, e.g. ibuprofen, warfarin.",
+                   "  <group>   = medicine class/family, e.g. NSAIDs, beta-blockers.",
+                   "  <brand>   = commercial product name, e.g. Tylenol, Xanax.",
+                   "  <drug_n>  = non-human substance or illicit drug, e.g. heroin, cocaine.",
+                   "",
+                   "Decision guide:",
+                   "  - Capitalised trade-style token   -> <brand>",
+                   "  - Lowercase chemical/generic      -> <drug>",
+                   "  - Plural or -s/-ics/-ers ending class noun -> <group>",
+                   "  - Recreational / toxin / animal substance  -> <drug_n>",
+                   "",
+                   "Constraints:",
+                   "  - Preserve the input character-by-character; the ONLY allowed change is inserting tags.",
+                   "  - No nested tags. No new tag names. No explanations.",
+                   "  - Output the tagged sentence, then stop."
+                  ],
+
+    "usrprompt" : ["Tag drugs in this sentence with <drug|group|brand|drug_n>...</...>. Return the tagged sentence only."
+                  ]
+}

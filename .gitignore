@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS junk
+.DS_Store
+
+# Generated pipeline artifacts
+*/preprocessed/
+*/models/
+*/results/
+*/results_*/
+*/experiments*/
+*/test_results/
+*/test_results_*/
+*.feat
+*.out
+*.stats
+*.log
+
+# External drug dictionaries (download separately, see README)
+resources/
+
+# LaTeX build artifacts
+*.aux
+*.fls
+*.fdb_latexmk
+*.toc
+*.synctex.gz
+_minted-*/
+
+# Editor / tooling
+.claude/
+.idea/
+.vscode/
